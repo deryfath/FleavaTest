@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/weather_image"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/weather_rainy"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/hour_weather_text"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="asdad"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/temp_weather_text"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:text="asdad"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/state_weather_text"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:textSize="12dp"
+                    android:text="asdad"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/humidity_weather_text"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:textSize="12dp"
+                    android:text="asdad"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

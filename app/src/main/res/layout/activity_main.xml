@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.main.MainActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.ui.main.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nested_home_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    >
+
+                    <LinearLayout
+                        android:layout_marginTop="-10dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/title_main"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Spirit"
+                            android:padding="20dp"
+                            android:textSize="40dp"
+                            android:fontFamily="@font/proximanova_bold"/>
+
+                        <FrameLayout
+                            android:id="@+id/frame_container_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="40dp"/>
+
+                    </LinearLayout>
+
+                </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/layout_fab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <android.support.design.widget.FloatingActionButton
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@color/blue_fab"
+                    app:borderWidth="0dp"
+                    android:elevation="0dp"
+                    app:fabSize="normal"
+                    android:scaleType="center"
+                    android:src="@drawable/filter_icon"
+                    android:layout_gravity="end"
+                    android:layout_margin="20dp"/>
+
+                <TextView
+                    android:id="@+id/cart_badge"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="right|end|top"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/badge_background"
+                    android:elevation="6dp"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            app:itemTextColor="@color/selected_bottom_nav"
+            app:itemIconTint="@color/selected_bottom_nav"
+            app:menu="@menu/menu_bottom_navigation_basic" />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="false">
+
+    <FrameLayout
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:foreground="@color/red_overlay">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_15" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/awareness_logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="AWARENESS"
+            android:textSize="25dp"
+            android:fontFamily="@font/proximanova_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="15dp"
+            android:text="Continue With Facebook"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:fontFamily="@font/proximanova_regular"
+            android:drawableLeft="@drawable/fb_logo"
+            android:background="@drawable/login_social_fb"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:padding="15dp"
+            android:text="Continue With VK"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:fontFamily="@font/proximanova_regular"
+            android:drawableLeft="@drawable/vk_logo"
+            android:background="@drawable/login_social_vk"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/proximanova_regular"
+            android:translationX="2dp"
+            android:paddingLeft="2dp"
+            android:background="@drawable/line_shape"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/proximanova_regular"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

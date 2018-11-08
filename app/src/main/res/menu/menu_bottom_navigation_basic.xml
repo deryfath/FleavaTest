@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_body"
+        android:icon="@drawable/body_icon"
+        android:title="Body"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/navigation_mind"
+        android:icon="@drawable/mind_icon"
+        android:title="Mind"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/navigation_spirit"
+        android:icon="@drawable/spirit_icon"
+        android:title="Spirit"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/navigation_event"
+        android:icon="@drawable/event_icon"
+        android:title="Event"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/account"
+        android:title="Account"
+        app:showAsAction="always|withText"
+        android:actionLayout="@layout/badge_item_action" />
+
+</menu>
